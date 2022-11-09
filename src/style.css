@@ -12,6 +12,8 @@ main {
   height: 100vh;
 }
 
+/* -----Main header--- */
+
 .list-container {
   display: flex;
   max-width: 600px;
@@ -40,4 +42,32 @@ main {
 .title i {
   margin-top: 3px;
   color: rgb(148, 148, 148);
+}
+
+/*  ---------    Form Style ------ */
+
+.list-form {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 1% 0%;
+}
+
+.list-form,
+.list-form input, 
+.list-form button {
+  background-color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 16px;
+}
+
+#add-list,
+#add-list-btn {
+  border: none;
+}
+
+#add-list-btn i {
+  background-color: rgb(255, 255, 255);
+  color: rgb(148, 148, 148);
+  cursor: pointer;
 }
