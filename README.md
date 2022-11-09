@@ -1,12 +1,12 @@
-# Webpack-setup
+# To do list
 
--This is the template for webpack to use in my projects.
+- This is a simple to do list app Microverse project
 
 ## Built With
 
 - HTML
 - Css
-- Javascript
+- Javascript ES6
 - webpack
 
 ## Getting Started
