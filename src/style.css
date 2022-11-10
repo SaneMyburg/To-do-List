@@ -20,6 +20,7 @@ main {
   width: 100%;
   justify-content: center;
   flex-direction: column;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
 }
 
 .title {
@@ -50,7 +51,7 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 2%;
-  margin: 1% 0%;
+  margin: 2px 0% 0%;
 }
 
 .list-form,
@@ -70,4 +71,31 @@ main {
   background-color: rgb(255, 255, 255);
   color: rgb(148, 148, 148);
   cursor: pointer;
+}
+
+/*    ----- To Do List Style----- */
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+  margin: 2px 0%;
+}
+
+.todo p {
+  width: 85%;
+}
+
+.todo,
+.todo p,
+.todo i {
+  background-color: rgb(255, 255, 255);
+}
+
+.clear-all {
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(215, 215, 215);
+  padding: 3%;
 }
