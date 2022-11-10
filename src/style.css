@@ -55,7 +55,7 @@ main {
 }
 
 .list-form,
-.list-form input, 
+.list-form input,
 .list-form button {
   background-color: rgb(255, 255, 255);
   font-style: italic;
@@ -65,6 +65,12 @@ main {
 #add-list,
 #add-list-btn {
   border: none;
+}
+
+.todo,
+.todo p,
+.todo i {
+  background-color: rgb(255, 255, 255);
 }
 
 #add-list-btn i {
@@ -84,12 +90,6 @@ main {
 
 .todo p {
   width: 85%;
-}
-
-.todo,
-.todo p,
-.todo i {
-  background-color: rgb(255, 255, 255);
 }
 
 .clear-all {
