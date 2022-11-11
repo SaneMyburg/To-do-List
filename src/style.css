@@ -99,10 +99,3 @@ main {
   background-color: rgb(215, 215, 215);
   padding: 3%;
 }
-
-/*   ----- Hidden buttons ------  */
-
-.uil-check-square,
-.uil-trash-alt {
-  display: none;
-}
