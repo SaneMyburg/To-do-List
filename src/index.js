@@ -1,12 +1,11 @@
 import './style.css';
-import { createTask } from './display';
+import { createTask } from './display.js'; // eslint-disable-line import/no-cycle
 
 const taskInput = document.querySelector('#add-list');
 const todoTask = document.querySelector('.to-do-task');
-export let arrayOfObjects = JSON.parse(localStorage.getItem('todo-list')) || [];
+export let arrayOfObjects = JSON.parse(localStorage.getItem('todo-list')) || []; // eslint-disable-line import/no-mutable-exports
 
-const clearAllButton = document.getElementById('clear-all-button');
-
+// const clearAllButton = document.getElementById('clear-all-button');
 
 export const showToDo = () => {
   todoTask.innerHTML = '';
@@ -17,7 +16,6 @@ export const showToDo = () => {
     });
   }
 };
-
 
 showToDo();
 
@@ -36,5 +34,3 @@ taskInput.addEventListener('keypress', (e) => {
     localStorage.setItem('todo-list', JSON.stringify(arrayOfObjects));
   }
 });
-
-

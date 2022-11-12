@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   margin: 0%;
-  background-color: rgb(237, 234, 234);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -98,4 +97,22 @@ main {
   border: none;
   background-color: rgb(215, 215, 215);
   padding: 3%;
+}
+
+.fa .fa-trash {
+  background-color: rgb(255, 255, 255);
+}
+
+.todo-div input {
+  background-color: rgb(255, 255, 255);
+  border: none;
+}
+
+.todo-div {
+  display: flex;
+  gap: 10px;
+}
+
+input[type=checkbox] {
+  background-color: rgb(255, 255, 255);
 }
