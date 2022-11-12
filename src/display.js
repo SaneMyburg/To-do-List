@@ -1,15 +1,20 @@
+const taskInput = document.querySelector('#add-list');
+const form = document.querySelector('.list-form');
+const addBtn = document.querySelector('#add-list-btn');
+const todoTask = document.querySelector('.to-do-task');
+let arrayOfObjects = JSON.parse(localStorage.getItem('todo-list')) || [];
 
 
-// const renderUI = () => {
-//   arrayOfObjects.forEach((task, index) => {
-//     todoTask.innerHTML += `
-//       <div class="todo" id=${index}>
-//         <i class="uil ${task.checked ? 'uil-check-square' : 'uil-square-full'}"></i>
-//         <p class="">${task.value}</p>
-//         <i class="uil uil-trash-alt"></i>
-//         <i class="uil uil-ellipsis-v"></i>
-//        </div>`
-          
-// })
-// };
-   
+
+
+  const editTask = (taskId, taskName)  => {
+    let editId;
+    let isEditedTask = false;
+        editId = taskId;
+        isEditedTask = true;
+        taskInput.value = taskName;
+    
+        console.log(taskId, taskName);
+    }
+
+    export default editTask
